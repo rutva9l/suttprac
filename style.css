@@ -1,9 +1,9 @@
-html{overflow-x: hidden;}
 body{
     font-family: 'Montserrat', Arial, sans-serif;
     margin: 0;
     overflow-x: hidden;
 }
+#wrapper{position: absolute; width: 100%; overflow-x: hidden}
 nav,#header,.short,.second,select{
     font-size: 10px;
 }
