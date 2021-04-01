@@ -1,16 +1,19 @@
 /* *{box-sizing: border-box;} */
-/* html{overflow-x: hidden;} */
 body{
     font-family: 'Montserrat', Arial, sans-serif;
     margin: 0;
     overflow-x: hidden;
 }
-#wrapper{position: absolute; width: 100%; overflow-x: hidden}
-nav,#header,.short,.second,select{
-    font-size: 10px;
-}
-.Border{
-    border-bottom: 1px solid #e0e0e0;
+nav,#header,.short,.second,select{font-size: 10px;}
+img,#Right li,.sumn>*,.claim{cursor: pointer;}
+.Border{border-bottom: 1px solid #e0e0e0;}
+nav,.first,.second,.place,.country,.sumn,.short,.container,.leftDiv,#select,.inLine,#hidden{display: flex;}
+.place,.sumn,.first,.second,.claim{align-items: center;}
+#wrapper{
+    position: relative; 
+    width: 100%;
+    overflow-x: hidden;
+    color: #595959;
 }
 .firstLine{
     position: relative;
@@ -21,22 +24,40 @@ nav,#header,.short,.second,select{
     height: 30px;
     justify-content: space-between;
 }
-select{
-    border: none;
-    color: #595959;
+#select{
+    width: 50px;
+    justify-content: space-between;
+    align-items: center;
 }
+#hidden{
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    width: 75px;
+    height: 65px;
+    flex-direction: column;
+    border-radius: 6px;
+    padding: 4px;
+    display: none;
+}
+#hidden div{
+    box-sizing: border-box;
+    padding: 4px;
+}
+#hidden div:first-child{
+    border-bottom: 1px solid #e0e0e0;
+}
+#select:hover #hidden{display: block;}
 nav a{
     text-decoration: none;
     color: #1a1a1a;
-    padding: 0;
-    margin: 0;
 }
 #in{
     width: 16px;
     background-image: url("iconfinder_flag-india_748132.png");
 }
-.first,.second,.place,.country,nav,.sumn,.short,.container,.leftDiv{display: flex;}
-.place,.sumn,.first,.second{align-items: center;}
 .sumn{
     width: 7vw;
     justify-content: space-between;
@@ -75,20 +96,19 @@ nav a{
     width: 1160px;
     height: 86px;
 }
-.logo img{
-    width: 100%;
-}
+.logo img{width: 100%;}
 hr{
     margin: 0;
+    padding: 0;
     border: 1px solid #333333;
 }
 .nav{
-    background-color: #ffffff;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-    z-index: 10;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
     height: 43px;
+    transition: height 1s;
+    z-index: 20;
 }
 .navImg{
     width: 32px;
@@ -101,8 +121,9 @@ hr{
 nav{
     width: 1160px;
     justify-content: space-between;
-    z-index: 10;
+    z-index: 20;
     margin: 0 auto;
+    background-color: white;
 }
 .navMenu{
     font-size: 12px;
@@ -113,10 +134,7 @@ nav{
     margin: 0;
     padding: 0;
 }
-.navMenu li{
-    padding: 12px 9px;
-}
-#hamburger{cursor: pointer;}
+.navMenu li{padding: 12px 9px;}
 #hamburger div{
     width:19px;
     margin:4px;
@@ -132,9 +150,7 @@ nav{
     color: #1a1a1a;
     overflow-x: hidden;
 }
-.short div{
-    margin-right: 24px;
-}
+.short div{margin-right: 24px;}
 .container{
     width: 1160px;
     position: relative;
@@ -166,7 +182,7 @@ nav{
 }
 .leftImgText{
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     font-size: 28px;
     font-weight: 1000;
     margin: 0 24px 16px;
@@ -238,20 +254,22 @@ nav{
 #Right ul{
     padding: 0 0 0 25px;
     list-style-type: circle;
-    color: #1a1a1a;
 }
 #Right li{
+    color: #1a1a1a;
     padding: 10px 0;
     border-bottom: 1px dotted #595959;
     font-weight: 500;
     font-size: 13px;
+    transition: color 1s ease;
+}
+#Right li:hover{
+    color: #595959;
 }
 @media (min-width:1021px) and (max-width:1260px){
     nav,.firstLine,.logo,.container,.short{width: 1000px;} 
     .navMenu li{padding: 12px 6px;}
-    #Left{
-        width: 454px;
-    }
+    #Left{width: 454px;}
     .leftImg{height: 255px;}
     .centerDiv{
         width: 129px;
@@ -327,8 +345,7 @@ nav{
         border-bottom: none;
     }
 }
-
-@media (max-width:640px){
+@media screen and (max-width:640px){
     .leftText,.firstLine{display: none;}
     .container{width: 100%;}
     .short{min-width: none;}
@@ -359,5 +376,7 @@ nav{
     .sumn{
         position: absolute;
         right: 0;
+        width: 100px;
+        top: 10px;
     }
 }

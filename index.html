@@ -15,70 +15,84 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <div class="Border">
-                <div class="firstLine">
-                    <div class="first">
-                        <div class="country">
-                            <span style="margin-right: 10px;">EDITION</span>
-                            <select class="flag">
-                                <option value="India"><div id="in"></div><span>IN</span></option>
-                                <option value="USA"><div id="us"></div><span>USA</span></option>
-                            </select>
-                        </div>
-                        <div class="date">THU, MAR 25, 2021 | UPDATED 03.15PM IST</div>
-                        <div class="place">
-                            <div style="margin: 0 4px;">NAVI MUMBAI</div>
-                            <div class="weather" style="margin: 0 4px;">
-                                <img src="./icons/iconfinder_weather-icons-cloudy_2087720.png" alt="">
-                                <span style="font-size: 14px;"><b>34</b>°C</span>
+    <div id="header">
+        <div class="Border">
+            <div class="firstLine">
+                <div class="first">
+                    <div class="country">
+                        <span style="margin-right: 10px;">EDITION</span>
+                        <!-- <select class="flag">
+                            <option value="India"><div id="in"><img src="./icons/iconfinder_flag-india_748132.png" alt=""></div><span>IN</span></option>
+                            <option value="USA"><div id="us"></div><span>USA</span></option>
+                        </select> -->
+                        <div id="select">
+                            <img src="./icons/iconfinder_flag-india_748132.png" alt="">
+                            <div>IN</div>
+                            <i class="fas fa-chevron-down"></i>
+                            <div id="hidden">
+                                <div class="inLine">
+                                    <img src="./icons/iconfinder_flag-india_748132.png" alt="" style="margin-right: 5px;">
+                                    <div>IN</div>
+                                </div>
+                                <div class="inLine">
+                                    <img src="./icons/iconfinder_flag-usa_748050.png" alt="" style="margin-right: 5px;">
+                                    <div>US</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="second">
-                        <div class="claim">
-                            <img src="./icons/iconfinder_Crown_3387314.png" alt="">
-                            <span>Log in & Claim your <b>6</b> points</span>
+                    <div class="date">THU, MAR 25, 2021 | UPDATED 03.15PM IST</div>
+                    <div class="place">
+                        <div>NAVI MUMBAI</div>
+                        <div class="weather" style="margin: 0 4px;">
+                            <img src="./icons/iconfinder_weather-icons-cloudy_2087720.png" alt="" style="margin: 0 4px;">
+                            <span style="font-size: 14px; position: relative;bottom: 6px;"><b>34</b>°C</span>
                         </div>
-                        <div style="font-size: 13px;">SIGN IN</div>
-                        <a href="https://twitter.com" target="_blank"><img src="./icons/iconfinder_twitter_social_media_online_1940915.png" alt=""></a>
-                        <a href="https://facebook.com" target="_blank"><img src="./icons/iconfinder_facebook_social_media_online_1940929.png" alt=""></a>
-                        <a href="https://timesofindia.indiatimes.com/rss.cms" target="_blank"><img src="./icons/iconfinder_rss_social_media_online_1940919.png" alt=""></a>
-                        <a href="https://youtube.com" target="_blank"><img src="./icons/iconfinder_youtube_play_social_media_online_1940911.png" alt=""></a>
                     </div>
                 </div>
-            </div>
-            <div class="Border">
-                <div class="logo">
-                    <a href="https://timesofindia.com"><img src="https://static.toiimg.com/photo/79638690.cms" alt=""></a>
-                </div>
-            </div>
-            <!-- <hr> -->
-        </div>
-        <div class="nav">
-            <nav>
-                <div class="navImg"></div>
-                <ul class="navMenu">
-                    <li style="padding-left: 0;"><a href="#">Briefs</a></li><li><a href="#">Videos</a></li><li><a href="#">City</a></li>
-                    <li><a href="#">India</a></li><li><a href="#">World</a></li><li><a href="#">Business</a></li>
-                    <li><a href="#">Tech</a></li><li><a href="#">Cricket</a></li><li><a href="#">Sports</a></li>
-                    <li><a href="#">Entertainment</a></li><li><a href="#">TV</a></li><li><a href="#">Web Series</a></li>
-                    <li><a href="#">Life & Style</a></li><li><a href="#">Education</a></li><li><a href="#">Photos</a></li><li><a href="#">Blogs</a></li>
-                </ul>
-                <div class="sumn" style="font-family: 'PT Serif', serif;">
-                    <div style="font-weight: 700; font-size: 14px;">TOI<span style="color: #e21b22; font-weight:  1000;">+</span></div>
-                    <img src="./icons/iconfinder_32-Search_2123956.png" alt="">
-                    <!-- <i class="fas fa-search"></i> -->
-                    <div id="hamburger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <div class="second">
+                    <div class="claim">
+                        <img src="./icons/iconfinder_Crown_3387314.png" alt="">
+                        <span>Log in & Claim your <b>6</b> points</span>
                     </div>
+                    <span style="font-size: 13px;">SIGN IN</span>
+                    <a href="https://twitter.com" target="_blank"><img src="./icons/iconfinder_twitter_social_media_online_1940915.png" alt=""></a>
+                    <a href="https://facebook.com" target="_blank"><img src="./icons/iconfinder_facebook_social_media_online_1940929.png" alt=""></a>
+                    <a href="https://timesofindia.indiatimes.com/rss.cms" target="_blank"><img src="./icons/iconfinder_rss_social_media_online_1940919.png" alt=""></a>
+                    <a href="https://youtube.com" target="_blank"><img src="./icons/iconfinder_youtube_play_social_media_online_1940911.png" alt=""></a>
                 </div>
-            </nav>
-            <hr>
+            </div>
         </div>
+        <div class="Border">
+            <div class="logo">
+                <a href="https://timesofindia.com"><img src="https://static.toiimg.com/photo/79638690.cms" alt=""></a>
+            </div>
+        </div>
+        <!-- <hr> -->
+    </div>
+    <div class="nav">
+        <nav>
+            <div class="navImg"></div>
+            <ul class="navMenu">
+                <li style="padding-left: 0;"><a href="#">Briefs</a></li><li><a href="#">Videos</a></li><li><a href="#">City</a></li>
+                <li><a href="#">India</a></li><li><a href="#">World</a></li><li><a href="#">Business</a></li>
+                <li><a href="#">Tech</a></li><li><a href="#">Cricket</a></li><li><a href="#">Sports</a></li>
+                <li><a href="#">Entertainment</a></li><li><a href="#">TV</a></li><li><a href="#">Web Series</a></li>
+                <li><a href="#">Life & Style</a></li><li><a href="#">Education</a></li><li><a href="#">Photos</a></li><li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="sumn" style="font-family: 'PT Serif', serif;">
+                <div style="font-weight: 700; font-size: 14px;">TOI<span style="color: #e21b22; font-weight:  1000;">+</span></div>
+                <img src="./icons/iconfinder_32-Search_2123956.png" alt="">
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </div>
+    <div id="wrapper">
         <div class="short" style="overflow-x: hidden;">
             <div style="color: #e21b22;"><b>IN THE NEWS</b></div>
             <div>IPL 2021</div>
@@ -167,7 +181,7 @@
             </div>
             <div id="Center">
                 <div class="centerDiv">
-                    <img src="https://images.hindustantimes.com/img/2021/03/10/550x309/PTI03_09_2021_000231B_1615343014115_1615343042151.jpg" alt="" class="centerImg">
+                    <img src="https://images.indianexpress.com/2019/05/tmc-bjp-fb.jpg" alt="" class="centerImg">
                 </div>
                 <p class="centerText">BJP vs TMC: Matua community and it's electoral significance</p>
                 <div class="centerDiv">
