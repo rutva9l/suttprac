@@ -1,2 +1,2 @@
 # timesofindia-clone
-https://rutva9l.github.io/suttprac/
+https://rutva9l.github.io/timesofindia-clone/
