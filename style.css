@@ -5,7 +5,7 @@ body{
     overflow-x: hidden;
 }
 nav,#header,.short,.second,select{font-size: 10px;}
-img,#Right li,.sumn>*,.claim{cursor: pointer;}
+img,#Right li,.sumn>*,.claim,.leftText,.centerText{cursor: pointer;}
 .Border{border-bottom: 1px solid #e0e0e0;}
 nav,.first,.second,.place,.country,.sumn,.short,.container,.leftDiv,#select,.inLine,#hidden{display: flex;}
 .place,.sumn,.first,.second,.claim{align-items: center;}
